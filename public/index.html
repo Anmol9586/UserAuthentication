@@ -25,6 +25,19 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<!-- Initialize Facebook SDK after the page has loaded -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '456247976762132',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v12.0'
+    });
+  };
+</script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
